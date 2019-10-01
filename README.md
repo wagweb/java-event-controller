@@ -47,12 +47,12 @@ The EventReceiver class serves as the name suggests for receiving events. One Ev
 can be used for multiple events.
 
 ```java
-	eventController.registerReceiver("event-name-1", eventReceiver);
+eventController.registerReceiver("event-name-1", eventReceiver);
 
-	eventController.registerReceiver(
-		"event-name-2", // <- event name that can be freely chosen (used to map the different events)
-		eventReceiver // < - event receiver instance that will receive events with "event-name-2"
-	);
+eventController.registerReceiver(
+	"event-name-2", // <- event name that can be freely chosen (used to map the different events)
+	eventReceiver // < - event receiver instance that will receive events with "event-name-2"
+);
 ```
 
 ### 4. Send an event
@@ -77,7 +77,7 @@ When you are done you can unregister the event receiver.
 (This prevents RAM leakage because the event controller holds an reference to every registered EventReceiver instance, this blocks the Java garbage collector to delete non used receiver instances).
 
 ```java
-	eventController.unregisterReceiver("event-name-1", eventReceiver);
+eventController.unregisterReceiver("event-name-1", eventReceiver);
 ```
 
 ### 6. Working with callbacks
