@@ -122,11 +122,9 @@ eventController.sendEvent(event, eventCallback);
 
 ## Class blueprints
 
-<hr>
-
 ### EventController Class
 
-#### Attributes:
+**Attributes:**
 
 | attribute                          | access       | initial value                                   |
 |------------------------------------|--------------|-------------------------------------------------|
@@ -135,7 +133,7 @@ eventController.sendEvent(event, eventCallback);
 | event_process_type_multi_threaded  | final public | event_process_type_multi_threaded               |
 | default_event_process_type         | public       | EventController.event_process_type_non_threaded |
 
-#### Methods:
+**Methods:**
 
 | method             | arguments                                     |
 |--------------------|-----------------------------------------------|
@@ -144,11 +142,9 @@ eventController.sendEvent(event, eventCallback);
 | registerReceiver   | String eventName, EventReceiver eventReceiver |
 | unregisterReceiver | String eventName, EventReceiver eventReceiver |
 
-<hr>
-
 ### Event Class
 
-#### Constructors:
+**Constructors:**
 
 | constructor        | arguments                                 |
 |--------------------|-------------------------------------------|
@@ -156,24 +152,25 @@ eventController.sendEvent(event, eventCallback);
 | constructor 2      | String eventName                          |
 | constructor 3      | String eventName, String eventProcessType |
 
-#### Attributes:
+**Attributes:**
 
 | attribute        | access | initial value                              |
 |------------------|--------|--------------------------------------------|
 | eventName        | public | empty string                               |
 | eventProcessType | public | EventController.default_event_process_type |
 
-<hr>
-
 ### EventReceiver Interface
+
+**Methods:**
 
 | method  | arguments                                |
 |---------|------------------------------------------|
 | onEvent | Event event, EventCallback eventCallback |
 
-<hr>
 
 ### EventCallback Interface
+
+**Methods:**
 
 | method     | arguments   |
 |------------|-------------|
