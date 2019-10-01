@@ -10,6 +10,12 @@ public class Event {
         this.eventName = eventName;
     }
 
+	// constructor type 3
+    public Event(String eventName, String eventProcessType) {
+        this.eventName = eventName;
+		this.eventProcessType = eventProcessType;
+    }
+
     // event name
     public String eventName = "";
 
