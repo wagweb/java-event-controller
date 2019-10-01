@@ -82,7 +82,7 @@ eventController.unregisterReceiver("event-name-1", eventReceiver);
 
 ### 6. Working with callbacks
 
-You can easily get a callback from called event receivers. This allows for event responsive and event driven programming.
+You can easily get a callback from called event receivers. This allows for responsive and event driven programming.
 
 ```java
 
