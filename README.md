@@ -63,11 +63,11 @@ event.eventName = "event-name-1";
 event.eventProcessType = EventController.event_process_type_non_threaded; // constructor type 1
 eventController.sendEvent(event); // <- send event with the event controller instance
 
-Event event1 = new Event("event-name-2");
+Event event2 = new Event("event-name-2");
 event.eventProcessType = EventController.event_process_type_single_threaded; // constructor type 2
 eventController.sendEvent(event); // <- send event with the event controller instance
 
-Event event1 = new Event("event-name-2", EventController.event_process_type_multi_threaded); // constructor type 3
+Event event3 = new Event("event-name-2", EventController.event_process_type_multi_threaded); // constructor type 3
 eventController.sendEvent(event); // <- send event with the event controller instance
 ```
 
