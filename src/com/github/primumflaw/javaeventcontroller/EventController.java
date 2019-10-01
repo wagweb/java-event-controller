@@ -10,9 +10,9 @@ public class EventController {
     private HashMap<String, ArrayList<EventReceiver>> receiverListMap = new HashMap<>();
 
     // event process types
-    public static String event_process_type_non_threaded = "event_process_type_non_threaded";
-    public static String event_process_type_single_threaded = "event_process_type_single_threaded";
-    public static String event_process_type_multi_threaded = "event_process_type_multi_threaded";
+    public static final String event_process_type_non_threaded = "event_process_type_non_threaded";
+    public static final String event_process_type_single_threaded = "event_process_type_single_threaded";
+    public static final String event_process_type_multi_threaded = "event_process_type_multi_threaded";
 
     // default event process type
     public static String default_event_process_type = event_process_type_non_threaded;
