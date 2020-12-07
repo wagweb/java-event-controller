@@ -180,7 +180,7 @@ eventController.sendEvent(event, eventCallback);
 
 ## Recommendations or questions
 
-If you have any ideas that would make the grid even greater, feel free to contact me:
-[mailto](Mailto:wag96niklas@gmail.com)
+If you have any improvement ideas feel free to contact me:
+[mailto](Mailto:niklas@wagweb.de)
 
 Thank you for downloading, made with ❤️ and 🍺 in Munich
